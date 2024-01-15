@@ -1,10 +1,39 @@
 .fahrenhietSecton {
-  background: blue;
   display: flex;
   flex-direction: column;
-  width: 50dvw;
+  width: 10dvw;
+}
+#animationBtn {
+  border: none;
+  width: 10dvw;
+  background-color: brown;
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 
 body {
   color: beige;
+  background-image: url(pexels-simon-rizzi-1809644.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes grow {
+  from {
+    width: 50px;
+    height: 50px;
+    border-radius: 0px;
+    transform: translateX(0px);
+  }
+  to {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    transform: translateX(100px);
+  }
 }
