@@ -8,8 +8,23 @@
     <script src="index.js"></script>
   </head>
   <body>
+    <div class="celsiusSection">
+      <div class="innersectionC">
+        <input
+          id="inputCelsius"
+          type="number"
+          placeholder="fahrenheit"
+          oninput="temperatureConverter(this.value)"
+        />
+      </p>
+      <p>fahrenheit: <span id="outputFahrenheit"></span></p>
+    
+    
+    </div>
+     </div>
     <p>
       <div class="fahrenhietSecton"><label>Celsius</label>
+        <div class="innersectionF">
       <input
         id="inputFahrenheit"
         type="number"
@@ -18,10 +33,12 @@
       />
     </p>
     <p>fahrenheit: <span id="outputCelsius"></span></p>
-  </div>
+ 
 
  <button id="animationBtn">Change it</button>
- 
+ </div>
+ </div>
+
 
 
   </body>

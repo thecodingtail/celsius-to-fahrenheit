@@ -1,8 +1,28 @@
 .fahrenhietSecton {
   display: flex;
   flex-direction: column;
-  width: 10dvw;
+  width: 50%;
+  color: beige;
+  background-image: url(pexels-simon-rizzi-1809644.jpg);
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  align-self: start;
+  display: block;
 }
+
+#inputFahrenheit {
+  width: 50%;
+  border-radius: 200px;
+  align-items: center;
+  padding: 10px;
+  display: block;
+}
+
+.innersectionF {
+  display: block;
+}
+
 #animationBtn {
   border: none;
   width: 10dvw;
@@ -13,14 +33,18 @@
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-delay: 0s;
+  position: relative;
+  top: 100px;
 }
 
 body {
   color: beige;
-  background-image: url(pexels-simon-rizzi-1809644.jpg);
-  background-size: cover;
+  height: 103vh; 
   display: flex;
   flex-direction: column;
+  align-items: end;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes grow {
@@ -37,3 +61,24 @@ body {
     transform: translateX(100px);
   }
 }
+
+.celsiusSection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: beige;
+  background-image: url(R.jpg);
+  background-size: cover;
+  height: 100%;
+  position: sticky;
+  align-items:  end;
+  margin: 0;
+}
+  /*width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(R.jpg);
+  height: 100%;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
